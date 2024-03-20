@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESPN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- SCORES -->
+    <nav>
+      <div class="header">
+        <p>Matches(5)</p>
+        <p>IND v NZ</p>
+        <p>WPL(1)</p>
+        <p>AFG v IRE(2)</p>
+        <p>PSL 2024(1)</p>
+      </div>
+      <div class="scores">
+        <div class="card">
+          <div class="card-nav">
+            <p>LIVE</p>
+            <p>3rd ODI</p>
+            <p>Chattogram</p>
+          </div>
+          <div class="card-scores">
+            <div class="flag">
+              <div class="team">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/1200px-Flag_of_Sri_Lanka.svg.png"
+                  alt="Sri-Lanka-Flag"
+                />
+                <p style="font-weight: 600">SL</p>
+              </div>
+              <div class="team">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1200px-Flag_of_Bangladesh.svg.png"
+                  alt=""
+                />
+                <p style="color: gray">BAN</p>
+              </div>
+              <p class="current">Sri Lanka chose to bat.</p>
+            </div>
+            <div class="runs">
+              <div class="first-run">
+                <p>(50 ov)</p>
+                <p>250</p>
+              </div>
+              <div class="second-run">
+                <p>Yet to bat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Schedule</p>
+            <p>Report</p>
+            <p>Table</p>
+            <p>Series</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-nav">
+            <p style="color: #2b2c2d">RESULT</p>
+            <p>T20 WC</p>
+            <p>Final</p>
+            <p>Uttarakhand</p>
+          </div>
+          <div class="card-scores">
+            <div class="flag">
+              <div class="team">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+                  alt="Indian-Flag"
+                />
+                <p style="font-weight: 600">IND</p>
+              </div>
+              <div class="team">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaMYVM3TLnLYb-vsiLznwq7XEse8rh0qOs9okmGyYJdbqDDk_W3Qc4Gmx9vw8&s=10"
+                  alt=""
+                />
+                <p style="color: gray">NZ</p>
+              </div>
+              <p class="current">India won by 58 runs</p>
+            </div>
+            <div class="runs">
+              <div class="first-run">
+                <p>155/7</p>
+              </div>
+              <div class="second-run">
+                <p><span style="font-size: 10px;">(17.2/20 ov. T:156) </span>98</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Schedule</p>
+            <p>Report</p>
+            <p>Table</p>
+            <p>Series</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-nav">
+            <p style="color: #2b2c2d">RESULT</p>
+            <p>Final</p>
+            <p>WPL</p>
+            <p>WT20</p>
+            <p>Delhi</p>
+          </div>
+          <div class="card-scores">
+            <div class="flag">
+              <div class="team">
+                <img
+                  src="https://www.tcscricket.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-29-at-8.33.58-PM-7-247x247.jpeg"
+                  alt="RCB"
+                />
+                <p>RCB-W</p>
+              </div>
+              <div class="team">
+                <img
+                  src="https://www.delhicapitals.in/static-assets/images/cssimages/logo.png"
+                  alt="DC"
+                />
+                <p style="color: gray">DC-W</p>
+              </div>
+              <p class="current">RCB Women won by 8 wickets</p>
+            </div>
+            <div class="runs">
+              <div class="first-run">
+                <p><span style="font-size: 10px;">(19.3/20 ov. T:114) </span>115/2</p>
+              </div>
+              <div class="second-run">
+                <p>113</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Schedule</p>
+            <p>Report</p>
+            <p>Table</p>
+            <p>Series</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+    <div class="subnav">
+      <div class="container">
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" alt="" />
+
+        <ul class="info">
+          <li  class="dropdown"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)">
+          <a href="#" class="nav-link">Live Scores</a>
+          <div class="dropdown-content">
+          <a href="#">Schedule</a>
+          <a href="#">Results</a>
+          <a href="#">Season View</a>
+          </div>
+          </li>
+
+          <li>Series</li>
+          <li>Teams</li>
+          <li>News</li>
+          <li>Featues</li>
+          <li>Videos</li>
+        </ul>
+
+        <ul class="sub-info">
+          <li>Edition IN</li>
+          <li><i class="icon ri-moon-fill"></i></li>
+          <li><i class="icon ri-notification-2-fill"></i></li>
+          <li><i class="icon ri-translate-2"></i></li>
+          <li><i class="icon ri-menu-fill"></i></li>
+          <li><i class="icon ri-search-2-line"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HERO SECTION 1 -->
+    <div class="main-container">
+      <div class="hero">
+      <!-- LEFT BOX (MAIN) -->
+        <div class="hero-right">
+          <div class="hero-right-top">
+            <div class="hero-top-header">
+              <div class="hero-header-left">
+                <iframe
+                  class="header-video"
+                  src="https://www.youtube.com/embed/watch?v=3tLeV7nP8zU&ab_channel=SupercutAction"
+                >
+                </iframe>
+                <div class="video-bullets">
+                  <p>Outs and ins</p>
+                  <p>Fixtures</p>
+                  <p>Squads</p>
+                </div>
+              </div>
+              <div class="hero-header-right">
+                <p>IPL 2024</p>
+                <h1>
+                  'I've been fit since January' - Hardik confirms he will bowl
+                </h1>
+              </div>
+            </div>
+            <div class="hero-bottom-bullets">
+              <div class="hero-bottom-right">
+                <p>
+                  <i class="ri-arrow-right-s-line"></i>Mumbai sign Wood to
+                  replace injured Behrendorff
+                </p>
+                <p>
+                  <i class="ri-arrow-right-s-line"></i>Mitchell keeps the family
+                  globe-trotting tradition alive
+                </p>
+                <p>
+                  <i class="ri-arrow-right-s-line"></i
+                  ><span style="font-weight: 600">Newsfile</span>-Kohli
+                  'excited' to be back
+                </p>
+                <p>
+                  <i class="ri-arrow-right-s-line"></i>Madushanka to miss
+                  initial stages of IPL 2024
+                </p>
+              </div>
+              <div class="hero-bottom-left">
+                <p>
+                  <i class="ri-arrow-right-s-line"></i>Shreyas Iyer's fitness a
+                  concern for spin-heavy KKr
+                </p>
+                <p>
+                  <i class="ri-arrow-right-s-line"></i>Suryakumar in doubt for
+                  Mumbai Indians' season opener
+                </p>
+                <p>
+                  <i class="ri-arrow-right-s-line"></i>Do new-look SRH have the
+                  personnel to reverse fortunes?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-right-bottom">
+            <div class="cards">
+              <img
+                src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/esci/media/motion/2024/0317/dm_240317_INET_CRIC_IPL2024_PREVIEWCONTENT_RUNORDER_CAPTAINS_GLOBAL/dm_240317_INET_CRIC_IPL2024_PREVIEWCONTENT_RUNORDER_CAPTAINS_GLOBAL.jpg"
+                alt="hardik"
+              />
+              <p>Hardik, Pant, Gill, Shreyas, Cummins in the spotlight</p>
+            </div>
+            <div class="cards">
+              <img
+                src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/lsci/db/PICTURES/CMS/359900/359990.6.jpg"
+                alt="kings"
+              />
+              <p>Kings preview: Weak Indian batting core a concern</p>
+            </div>
+            <div class="cards">
+              <img
+                src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/lsci/db/PICTURES/CMS/360200/360261.6.jpg"
+                alt="RCB"
+              />
+              <p>RCB preview: Death bowling may be an issue</p>
+            </div>
+            <div class="cards">
+              <img
+                src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/lsci/db/PICTURES/CMS/377700/377762.6.jpg"
+                alt="Pant's Return"
+              />
+              <p>DC preview: Pant's return is a huge boost</p>
+            </div>
+            <div class="cards">
+              <img
+                src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/lsci/db/PICTURES/CMS/360800/360823.6.jpg"
+                alt="CSK"
+              />
+              <p>CSK preview: All eyes on Dhoni again</p>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT BOX -->
+        <div class="hero-left">
+          <div class="left-top">
+            <div class="left-header">
+              <h1>Must Watch</h1>
+              <p>See all</p>
+            </div>
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/esci/media/motion/2024/0313/Int_240313_CRIC_Analysis_Sthalekar_Pant_could_get_a_bigger_roar_than_Dhoni_and_Kohli_2024314/Int_240313_CRIC_Analysis_Sthalekar_Pant_could_get_a_bigger_roar_than_Dhoni_and_Kohli_2024314.jpg"
+              alt=""
+            />
+            <p>'Pant could get a bigger roar than Dhoni and Kohli'</p>
+          </div>
+          <div class="left-top">
+            <div class="left-header">
+              <h1>Number Crunching</h1>
+            </div>
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/esci/media/motion/2024/0311/dm_240311_INET_CRIC_NZVSAUS24_CUMMINSPC_NONBRANDED_GLOBAL/dm_240311_INET_CRIC_NZVSAUS24_CUMMINSPC_NONBRANDED_GLOBAL.jpg"
+              alt=""
+            />
+            <p>Cummins: We always find a way to win</p>
+          </div>
+        </div>     
+    </div>
+
+    <!-- HERO SECTION 2 -->
+    <div class="main-container">
+    <div class="hero-second">
+      <!-- LEFT BOX -->
+      <div class="hero-second-right">
+      <div class="hero-second-top">
+        <h1>Match Coverage</h1>
+        <div class="match-scores">
+          <div onclick="makeActive(this)" class="info active">
+            <h1>WPL 2024</h1>
+            <p>Final</p>
+          </div>
+          <div onclick="makeActive(this)"  class="info">
+            <h1>PSl 2024</h1>
+            <p>Final</p>
+          </div>
+          <div onclick="makeActive(this)"  class="info">
+            <h1>Ban vs SL</h1>
+            <p>Men ODIs</p>
+          </div>
+          <div onclick="makeActive(this)"  class="info">
+            <h1>Afg vs Ire</h1>
+            <p>Final</p>
+          </div>
+          <div onclick="makeActive(this)"  class="info">
+            <h1>NZ vs Eng</h1>
+            <p>Final</p>
+          </div>
+        </div>
+        <div class="hero-second-video">
+          <div class="hero-second-left-video">
+            <iframe
+              class="second-video"
+              src="https://www.youtube.com/embed/watch?v=3tLeV7nP8zU&ab_channel=SupercutAction"
+            >
+            </iframe>
+            <div class="video-bullets">
+              <p>Report:Perry, spinners steer RCB to title</p>
+            </div>
+          </div>
+          <div class="hero-second-right">
+            <h1>How RCB went from 0-5 to WPL winners in a year</h1>
+            <button>DC-W vs RCB-W: <span style="font-weight: 500;">RCB Women won by 8 wickets (with 3 balls remaining)</span></button>
+          </div>
+        </div>
+        <div class="hero-bottom-bullets">
+          <div class="hero-bottom-right">
+            <p>
+              <i class="ri-arrow-right-s-line"></i>Smart Stats - Deepti, Perry, Kapp take top honours
+            </p>
+            <p>
+              <i class="ri-arrow-right-s-line"></i>Mandhana shuns the spotlight as RCB party
+            </p>
+          
+          </div>
+          <div class="hero-bottom-left">
+            <p>
+              <i class="ri-arrow-right-s-line"></i>Deepti in RCB-DC dominated team of tournament
+            </p>
+            <p>
+              <i class="ri-arrow-right-s-line"></i>Mandhana jubilant: 'Ee saala cup namdu'
+            </p>
+           
+          </div>
+        </div>
+        
+      </div>
+        <div class="hero-right-bottom">
+          <div class="cards">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/lsci/db/PICTURES/CMS/340000/340072.6.jpg"
+              alt="hardik"
+            />
+            <p>Royals preview: Light on allrounders</p>
+          </div>
+          <div class="cards">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/lsci/db/PICTURES/CMS/371700/371711.6.jpg"
+              alt="kings"
+            />
+            <p>SRH preview: Can new-look unit reverse fortunes?</p>
+          </div>
+          <div class="cards">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_240/lsci/db/PICTURES/CMS/MULTIMEDIA/136500/136502.thumb.jpg"
+              alt="RCB"
+            />
+            <p>Williamson? Rabada? Who makes the cut?</p>
+          </div>
+          <div class="cards">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/esci/media/motion/2024/0313/dm_240313_smriti_1303/dm_240313_smriti_1303.jpg"
+              alt="Pant's Return"
+            />
+            <p>WPL: What has made RCB click?</p>
+          </div>
+          <div class="cards">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/esci/media/motion/2024/0311/dm_240311_INET_CRIC_/dm_240311_INET_CRIC_.jpg"
+              alt="CSK"
+            />
+            <p>Where does this rank among India's 17 succesive win</p>
+          </div>
+      </div>
+      
+    </div>
+    <!-- RIGHT BOX-->
+    <div class="hero-left">
+      <div class="left-top">
+        <div class="left-header">
+          <h1>On this Day</h1>
+          <p>See all</p>
+        </div>
+        <img
+          src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/lsci/db/PICTURES/CMS/260000/260083.3.jpg"
+          alt=""
+        />
+        <p>'Pant could get a bigger roar than Dhoni and Kohli'</p>
+      </div>
+      <div class="left-top">
+        <div class="left-header">
+          <h1>Playlist</h1>
+        </div>
+        <img
+          src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/esci/media/motion/2024/0308/dm_240308_25Q_tahlia/dm_240308_25Q_tahlia.jpg"
+          alt=""
+        />
+        <p>25 Questions</p>
+      </div>
+    </div>
+    </div>
+    
+  <!-- </div> -->
+
+  <script src="script.js"></script>
+  </body>
+</html>
