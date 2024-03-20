@@ -178,6 +178,7 @@ nav .scores .card {
   margin-left: 23px;
   cursor: pointer;
 }
+
 .info .dropdown a {
   color: white;
   list-style: none;
@@ -191,18 +192,23 @@ nav .scores .card {
   position: absolute;
   border-radius: 5px;
   background-color: #fff;
-  min-width: 100px;
+  min-width: 150px;
   z-index: 1;
-  top: 100%;
-  left: 0;
+  top: 105%;
+  left: -15%;
 }
 
 .info .dropdown-content a {
-  color: black;
+  color: #2b2c2d;
   padding: 8px 20px;
   text-decoration: none;
   display: block;
   font-size: 14px;
+  font-weight: 400;
+}
+.info .dropdown-content a:hover {
+  background-color: #e5f6fe;
+  border-radius: 5px;
 }
 
 .sub-info {

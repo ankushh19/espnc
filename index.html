@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
+    
     <!-- SCORES -->
     <nav>
       <div class="header">
@@ -162,14 +162,73 @@
           <a href="#">Schedule</a>
           <a href="#">Results</a>
           <a href="#">Season View</a>
+          <a href="#">Month View</a>
           </div>
           </li>
 
-          <li>Series</li>
-          <li>Teams</li>
-          <li>News</li>
-          <li>Featues</li>
-          <li>Videos</li>
+          <li  class="dropdown"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)">
+          <a href="#" class="nav-link">Series</a>
+          <div class="dropdown-content">
+          <a href="#">WPL 2024</a>
+          <a href="#">IPL 2024</a>
+          <a href="#">PSL 2024</a>
+          <a href="#">African Games 2024</a>
+          </div>
+          </li>
+
+         <li  class="dropdown"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)">
+          <a href="#" class="nav-link">Teams</a>
+          <div class="dropdown-content">
+          <a href="#">India</a>
+          <a href="#">Pakistan</a>
+          <a href="#">New Zealand</a>
+          <a href="#">England</a>
+          <a href="#">Bangladesh</a>
+          </div>
+          </li>
+
+          <li  class="dropdown"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)">
+          <a href="#" class="nav-link">News</a>
+          <div class="dropdown-content">
+          <a href="#">News Home</a>
+          <a href="#">Future of ODIs</a>
+          <a href="#">Ball-tempering</a>
+          <a href="#">Racism</a>
+          <a href="#">Corruption</a>
+          </div>
+          </li>
+
+          <li  class="dropdown"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)">
+          <a href="#" class="nav-link">Features</a>
+          <div class="dropdown-content">
+          <a href="#">Features Home</a>
+          <a href="#">Writers</a>
+          <a href="#">On this day</a>
+          <a href="#">Web Stories</a>
+          <a href="#">Photo galleries</a>
+          </div>
+          </li>
+
+          <li  class="dropdown"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)">
+          <a href="#" class="nav-link">Videos</a>
+          <div class="dropdown-content">
+          <a href="#">Icons</a>
+          <a href="#">Hindi Videos</a>
+          <a href="#">Haa Ya Naa</a>
+          <a href="#">25 Questions</a>
+          <a href="#">Interview</a>
+          </div>
+          </li>
         </ul>
 
         <ul class="sub-info">
@@ -184,6 +243,7 @@
     </div>
 
     <!-- HERO SECTION 1 -->
+    <div class="heroes">
     <div class="main-container">
       <div class="hero">
       <!-- LEFT BOX (MAIN) -->
@@ -288,7 +348,7 @@
           <div class="left-top">
             <div class="left-header">
               <h1>Must Watch</h1>
-              <p>See all</p>
+              <p style="cursor: pointer;">See all</p>
             </div>
             <img
               src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/esci/media/motion/2024/0313/Int_240313_CRIC_Analysis_Sthalekar_Pant_could_get_a_bigger_roar_than_Dhoni_and_Kohli_2024314/Int_240313_CRIC_Analysis_Sthalekar_Pant_could_get_a_bigger_roar_than_Dhoni_and_Kohli_2024314.jpg"
@@ -420,7 +480,7 @@
       <div class="left-top">
         <div class="left-header">
           <h1>On this Day</h1>
-          <p>See all</p>
+          <p style="cursor: pointer;">See all</p>
         </div>
         <img
           src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_320/lsci/db/PICTURES/CMS/260000/260083.3.jpg"
@@ -440,10 +500,7 @@
       </div>
     </div>
     </div>
-    
-    <footer>
-      hello
-    </footer>
+  </div>
 
   <script src="script.js"></script>
   </body>
