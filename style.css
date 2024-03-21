@@ -11,7 +11,10 @@ body {
   height: 100vh;
   width: 100%;
 }
-
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
 nav {
   width: 100%;
   min-height: 21vh;
@@ -158,6 +161,16 @@ nav .scores .card {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.subnav .container #responsive {
+  display: none;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 .subnav .container img {
@@ -530,4 +543,20 @@ nav .scores .card {
   width: 100%;
   height: 3px;
   background-color: #0398dc;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column-reverse;
+  }
+  .subnav {
+    justify-content: flex-start;
+  }
+  .subnav .container #responsive {
+    display: block;
+  }
+  .subnav .container .info,
+  .subnav .container .sub-info {
+    display: none;
+  }
 }
