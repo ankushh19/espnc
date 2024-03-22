@@ -266,7 +266,7 @@ nav .scores .card {
 }
 
 .hero .hero-right-top {
-  height: 375px;
+  min-height: 375px;
   width: 700px;
   background-color: #fff;
   border-top-left-radius: 10px;
@@ -274,7 +274,7 @@ nav .scores .card {
 }
 
 .hero-second-right .hero-second-top {
-  height: 435px;
+  min-height: 435px;
   width: 700px;
   background-color: #fff;
   border-top-left-radius: 10px;
@@ -558,5 +558,70 @@ nav .scores .card {
   .subnav .container .info,
   .subnav .container .sub-info {
     display: none;
+  }
+  .scores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-container .hero,
+  .main-container .hero-second {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero .hero-left,
+  .hero-second .hero-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hero-second .hero-second-right {
+    margin: 20px;
+  }
+  .hero-left .left-top {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .hero .hero-right-bottom,
+  .main-container .hero-right-bottom {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav .header {
+    display: none;
+  }
+  .hero-right-top .hero-top-header,
+  .hero-second-video {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-top-header .hero-header-right,
+  .hero-second-right {
+    margin-top: 50px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+  }
+  .hero-right-top .hero-bottom-bullets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .hero-right-bottom {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero .hero-left,
+  .hero-second .hero-left {
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
   }
 }
