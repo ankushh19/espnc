@@ -1,6 +1,6 @@
 function toggleDropdown(element, isHovering) {
   const dropdownContent = element.querySelector(".dropdown-content");
-  dropdownContent.style.display = isHovering ? "block" : "none";
+  dropdownContent.style.display = isHovering ? "flex" : "none";
 }
 
 function makeActive(element) {
